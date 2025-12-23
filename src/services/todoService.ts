@@ -1,6 +1,7 @@
 import type { Todo, CreateTodoData, UpdateTodoData } from '@/types/todo';
 
-const API_BASE_URL = 'http://localhost:8080/api';
+const API_BASE_URL =
+  import.meta.env['VITE_BACKEND_BASE_URL'] ?? 'http://localhost:8080/api';
 
 interface ApiResponse<T> {
   success: boolean;
