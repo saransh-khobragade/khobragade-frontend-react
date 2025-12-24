@@ -1,12 +1,12 @@
 import './App.css';
 import type { ReactElement } from 'react';
-import { TodoApp } from '@/components/todo/TodoApp';
+import { Dashboard } from '@/components/expense/Dashboard';
 import { Toaster } from '@/components/ui/sonner';
 
 function App(): ReactElement {
   return (
-    <div className='min-h-screen bg-background'>
-      <TodoApp />
+    <div className="min-h-screen bg-background">
+      <Dashboard />
       <Toaster />
     </div>
   );
